@@ -1,6 +1,6 @@
 /* EDIT YOUR CATALOGUE HERE.
    Add images to dist/assets/products/ and set image: 'assets/products/filename.jpg'.
-   Each product may have: id, name, category, description, image, price (MZN).
+   Each product may have: id, name, category, description, image, images (optional array of additional image paths), price (MZN).
    Leave image empty for the designed placeholder, and price null until confirmed.
    Replace these illustrative products with your actual stock before public launch. */
 window.TOP_PRODUCTS = [
