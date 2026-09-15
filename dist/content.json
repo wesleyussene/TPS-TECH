@@ -106,6 +106,19 @@
         "assets/uploads/1c2eb95f3ec4bde7b20100fbb420b950639186c17fbced550436940b4e0813e9.jpg"
       ],
       "active": true
+    },
+    {
+      "id": "produto-8bc3b960",
+      "name": "Samsung Galaxy SmartTag 2",
+      "category": "Acessórios",
+      "description": "",
+      "price": 2550,
+      "image": "assets/uploads/49d1a794d1b904fbc6402a165ada87b7b66f03b90413253e9af1a8433a62a776.jpg",
+      "images": [
+        "assets/uploads/6750e0401dc6726f5bcd52a458d85948b3010582fb1b7375c1bf15843bab4588.jpg",
+        "assets/uploads/b67c8078a96d14009081441c75b7e3bce861488c038491e21616f08d47b58b2a.jpg"
+      ],
+      "active": true
     }
   ],
   "banners": [],
