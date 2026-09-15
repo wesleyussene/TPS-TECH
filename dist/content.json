@@ -94,6 +94,18 @@
       "image": "",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-75bb6455",
+      "name": "JBL Tune T310c",
+      "category": "Áudio",
+      "description": "",
+      "price": 1.9,
+      "image": "assets/uploads/9930ba879beae2d186976969f1a538cf3069d0d433b85e94d2ec034202da232f.jpg",
+      "images": [
+        "assets/uploads/1c2eb95f3ec4bde7b20100fbb420b950639186c17fbced550436940b4e0813e9.jpg"
+      ],
+      "active": true
     }
   ],
   "banners": [],
