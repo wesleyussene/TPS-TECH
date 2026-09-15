@@ -1,6 +1,6 @@
 # Top Solutions
 
-A responsive Portuguese storefront inspired by the product-category structure of https://vipsolutions.co.mz, with original Top Solutions branding and the supplied SVG logo.
+A responsive Portuguese storefront with original Top Solutions branding and the supplied SVG logo.
 
 ## Open the site
 
