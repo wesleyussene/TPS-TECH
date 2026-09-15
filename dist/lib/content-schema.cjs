@@ -1,0 +1,13 @@
+'use strict';
+const categories=['Smartphones','Computadores','Áudio','Gaming','Wearables','Acessórios'];
+function validateContent(input){
+ const fail=m=>{throw Object.assign(new Error(m),{status:400});};
+ const text=(v,max,label,required=false)=>{if(typeof v!=='string'||v.length>max||(required&&!v.trim()))fail('Verifique '+label+'.');return v.trim();};
+ const image=v=>{v=text(v,500,'o endereço da imagem');if(v&&!/^assets\/(?:products|uploads)\/[a-zA-Z0-9_./-]+\.(?:jpg|jpeg|png|webp)$/i.test(v))fail('Utilize uma imagem JPG, PNG ou WebP carregada para o site.');if(v.includes('..'))fail('Endereço de imagem inválido.');return v;};
+ const link=v=>{v=text(v,500,'a ligação');if(!/^(?:#[-\w]+|(?:index|produto|carrinho|sobre|politicas)\.html(?:[?#][a-zA-Z0-9%=&_#.-]*)?)$/.test(v))fail('Escolha uma ligação para uma página deste site.');return v;};
+ if(!input||input.version!==1||!Array.isArray(input.products)||input.products.length>200||!Array.isArray(input.banners)||input.banners.length>8)fail('Conteúdo inválido: máximo de 200 produtos e 8 banners.');
+ const ids=new Set();const products=input.products.map(p=>{if(!p||!/^[a-z0-9][a-z0-9-]{0,63}$/.test(p.id)||ids.has(p.id))fail('Cada produto precisa de uma referência única.');ids.add(p.id);if(!categories.includes(p.category))fail('Categoria inválida.');if(p.price!==null&&(typeof p.price!=='number'||!Number.isFinite(p.price)||p.price<0||p.price>1e9||Math.abs(p.price*100-Math.round(p.price*100))>0.0001))fail('O preço deve ser positivo e ter no máximo duas casas decimais.');if(!Array.isArray(p.images)||p.images.length>8)fail('Máximo de 8 imagens adicionais por produto.');return {id:p.id,name:text(p.name,160,'o nome',true),category:p.category,description:text(p.description,8000,'a descrição'),price:p.price,image:image(p.image),images:p.images.map(image),active:p.active!==false};});
+ const banners=input.banners.map(b=>({title:text(b.title,160,'o título do banner',true),description:text(b.description,600,'a descrição do banner'),image:image(b.image),button:text(b.button,60,'o texto do botão',true),href:link(b.href),active:b.active!==false}));
+ const h=input.hero||{};return {version:1,products,banners,sampleCatalogue:input.sampleCatalogue===true,announcement:text(input.announcement,200,'o aviso superior'),hero:{eyebrow:text(h.eyebrow,120,'o subtítulo'),title:text(h.title,180,'o título principal',true),description:text(h.description,600,'o texto principal'),button:text(h.button,60,'o botão principal',true),image:image(h.image||'')},about:text(input.about,12000,'o texto sobre nós')};
+}
+module.exports={validateContent,categories};
