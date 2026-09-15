@@ -80,6 +80,16 @@
       "image": "",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-04336912",
+      "name": "iPhone 17",
+      "category": "Smartphones",
+      "description": "",
+      "price": 99000,
+      "image": "",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
