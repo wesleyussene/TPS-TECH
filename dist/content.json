@@ -3,10 +3,10 @@
   "products": [
     {
       "id": "smartphone",
-      "name": "Smartphone",
+      "name": "iPhone 17 Pro Max",
       "category": "Smartphones",
       "description": "Para se manter ligado, captar momentos e levar o essencial consigo.",
-      "price": null,
+      "price": 115000,
       "image": "",
       "images": [],
       "active": true
