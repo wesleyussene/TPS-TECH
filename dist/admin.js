@@ -6,7 +6,7 @@ const draftKey='ts-admin-draft-v1';let content,base,assets=[],dirty=false,draftS
 const money=n=>n===null?'Preço sob consulta':new Intl.NumberFormat('pt-MZ',{style:'currency',currency:'MZN'}).format(n);
 const copy=o=>JSON.parse(JSON.stringify(o));
 const stable=v=>JSON.stringify(v,(_,x)=>x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.entries(x).sort(([a],[b])=>a.localeCompare(b))):x);
-const img=path=>{const a=assets.find(a=>a.path===path);return a?'data:image/webp;base64,'+a.data:path;};
+const img=path=>{const a=assets.find(a=>a.path===path);return a?'data:image/'+(a.path.endsWith('.jpg')?'jpeg':'webp')+';base64,'+a.data:path;};
 function notice(text,isError=false){$('#notice').hidden=!text;$('#notice').textContent=text;$('#notice').classList.toggle('error',isError);}
 async function api(body){const response=await fetch('/api/admin',body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{cache:'no-store'});const result=await response.json().catch(()=>({error:'O servidor não respondeu. Tente novamente.'}));if(!response.ok){const e=new Error(result.error);e.status=response.status;throw e;}return result;}
 function changed(){dirty=true;draftSaved=false;$('#draft-state').textContent='Alterações por publicar';$('#publish').disabled=false;}
@@ -29,7 +29,35 @@ $('#new-product').onclick=()=>{if(content.products.length>=200)return notice('M�
 document.addEventListener('click',e=>{const p=e.target.closest('[data-edit-product]'),b=e.target.closest('[data-edit-banner]'),remove=e.target.closest('[data-remove-image]');if(p)openEditor('product',Number(p.dataset.editProduct));if(b)openEditor('banner',Number(b.dataset.editBanner));if(remove){if(remove.dataset.kind==='hero'){content.hero.image='';changed();renderBanners();}else{const paths=editingType==='product'?[editing.image,...editing.images].filter(Boolean):[editing.image];paths.splice(Number(remove.dataset.removeImage),1);editing.image=paths[0]||'';if(editingType==='product')editing.images=paths.slice(1);$('#editor-media').innerHTML=mediaMarkup(paths,editingType);}}});
 $('#editor-form').onsubmit=e=>{e.preventDefault();const f=e.target.elements;if(editingType==='product'){editing.name=f.name.value.trim();editing.category=f.category.value;editing.description=f.description.value.trim();editing.price=f.price.value===''?null:Number(f.price.value);editing.active=f.active.checked;if(!editing.name)return;const list=content.products;if(editingIndex<0)list.push(editing);else list[editingIndex]=editing;}else{for(const k of ['title','description','button','href'])editing[k]=f[k].value.trim();editing.active=f.active.checked;if(!editing.title||!editing.button)return;if(editingIndex<0)content.banners.push(editing);else content.banners[editingIndex]=editing;}changed();renderProducts();renderBanners();$('#editor').close();saveDraft(false);};
 $('#close-editor').onclick=$('#cancel-editor').onclick=()=>$('#editor').close();
-async function uploadImage(file){if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>15000000)throw new Error('Escolha JPG, PNG ou WebP até 15 MB.');const bitmap=await createImageBitmap(file);if(bitmap.width*bitmap.height>80000000){bitmap.close();throw new Error('Imagem demasiado grande. Reduza a resolução.');}const scale=Math.min(1,1600/Math.max(bitmap.width,bitmap.height));const canvas=document.createElement('canvas');canvas.width=Math.round(bitmap.width*scale);canvas.height=Math.round(bitmap.height*scale);canvas.getContext('2d').drawImage(bitmap,0,0,canvas.width,canvas.height);bitmap.close();let blob;for(const q of [.85,.7,.55,.4]){blob=await new Promise(r=>canvas.toBlob(r,'image/webp',q));if(blob&&blob.size<=450000)break;}if(!blob||blob.type!=='image/webp'||blob.size>450000)throw new Error('Não foi possível optimizar a imagem. Escolha uma imagem mais pequena.');const bytes=new Uint8Array(await blob.arrayBuffer());const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(b=>b.toString(16).padStart(2,'0')).join('');const path='assets/uploads/'+hash+'.webp';if(!assets.some(a=>a.path===path)){let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));assets.push({path,data:btoa(binary)});}return path;}
+async function uploadImage(file){
+ if(!['image/jpeg','image/png','image/webp'].includes(file.type)||file.size>15000000)throw new Error('Escolha JPG, PNG ou WebP até 15 MB.');
+ const bitmap=await createImageBitmap(file);
+ if(bitmap.width*bitmap.height>80000000){bitmap.close();throw new Error('Imagem demasiado grande. Reduza a resolução.');}
+ const canvas=document.createElement('canvas');let blob,format='image/webp';
+ try{
+  for(const limit of [1600,1200,900,600]){
+   const scale=Math.min(1,limit/Math.max(bitmap.width,bitmap.height));
+   canvas.width=Math.max(1,Math.round(bitmap.width*scale));canvas.height=Math.max(1,Math.round(bitmap.height*scale));
+   const ctx=canvas.getContext('2d');
+   if(format==='image/jpeg'){ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);}
+   ctx.drawImage(bitmap,0,0,canvas.width,canvas.height);
+   for(const q of [.85,.7,.55,.4]){
+    blob=await new Promise(r=>canvas.toBlob(r,format,q));
+    // WebKit may return PNG when WebP encoding is unsupported.
+    if(format==='image/webp'&&blob?.type!=='image/webp'){
+     format='image/jpeg';ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(bitmap,0,0,canvas.width,canvas.height);
+     blob=await new Promise(r=>canvas.toBlob(r,format,q));
+    }
+    if(blob?.type===format&&blob.size<=450000)break;
+   }
+   if(blob?.type===format&&blob.size<=450000)break;
+  }
+ }finally{bitmap.close();}
+ if(!blob||blob.type!==format||blob.size>450000)throw new Error('Não foi possível optimizar a imagem. Escolha uma imagem mais pequena.');
+ const bytes=new Uint8Array(await blob.arrayBuffer());const hash=[...new Uint8Array(await crypto.subtle.digest('SHA-256',bytes))].map(b=>b.toString(16).padStart(2,'0')).join('');
+ const path='assets/uploads/'+hash+(format==='image/jpeg'?'.jpg':'.webp');
+ if(!assets.some(a=>a.path===path)){let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));assets.push({path,data:btoa(binary)});}return path;
+}
 $('#hero-upload').onchange=async e=>{try{if(e.target.files[0]){content.hero.image=await uploadImage(e.target.files[0]);changed();renderBanners();}}catch(err){notice(err.message,true);}finally{e.target.value='';}};
 for(const name of ['hero','pages']){$('#'+name+'-form').oninput=changed;$('#'+name+'-form').onsubmit=e=>{e.preventDefault();if(syncForms()){changed();saveDraft();}};}
 $('#save-draft').onclick=()=>{if(syncForms())saveDraft();};
