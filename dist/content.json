@@ -23,12 +23,16 @@
     },
     {
       "id": "headphones",
-      "name": "Headphones sem fios",
+      "name": "JBL Tune T110",
       "category": "Áudio",
       "description": "Música, chamadas e os seus conteúdos favoritos, ao seu ritmo.",
-      "price": null,
-      "image": "",
-      "images": [],
+      "price": 1.49,
+      "image": "assets/uploads/4fad88c761b1bad08a2f77aba01e2bfc25d6db2fea5c371433317165ea6309ef.jpg",
+      "images": [
+        "assets/uploads/fefb998e040a79abf2868be4d247f013e9618e8460822c7a84d40d60597e13d6.jpg",
+        "assets/uploads/553c49475d422ff0ada78e22c7cf56ffa8bd996c4096d14d8ebb83c37887514a.jpg",
+        "assets/uploads/a960fbb8f127acc39b7a937983e2310c8d11f58021ad6b56c28d73c39e0cfe8c.jpg"
+      ],
       "active": true
     },
     {
