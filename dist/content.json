@@ -57,12 +57,15 @@
     },
     {
       "id": "charger",
-      "name": "Carregador USB-C",
+      "name": "Xiaomi Smart dorbell 3",
       "category": "Acessórios",
-      "description": "Um essencial para manter os seus dispositivos prontos para o dia.",
-      "price": null,
-      "image": "",
-      "images": [],
+      "description": "",
+      "price": 6900,
+      "image": "assets/uploads/db6d86788bc27e8799ecc017c5aa9b183e9bf5417bcb25781131b37ae94c3155.jpg",
+      "images": [
+        "assets/uploads/dcf7b1ae6532209ed7735077d7979031f541e8eccacc68d8360d6bedc6a9297d.jpg",
+        "assets/uploads/08744cb1140398a50f28f7725f75a5cf2cb5812c4f084b630238b531ab7c18ab.jpg"
+      ],
       "active": true
     },
     {
@@ -117,6 +120,19 @@
       "images": [
         "assets/uploads/6750e0401dc6726f5bcd52a458d85948b3010582fb1b7375c1bf15843bab4588.jpg",
         "assets/uploads/b67c8078a96d14009081441c75b7e3bce861488c038491e21616f08d47b58b2a.jpg"
+      ],
+      "active": true
+    },
+    {
+      "id": "produto-8506982c",
+      "name": "Xiaomi Powerbank 10000Mah",
+      "category": "Acessórios",
+      "description": "",
+      "price": 2500,
+      "image": "assets/uploads/d68db977bb138c03283f25f0c5a54880f418b20d66f7f2d4d38f9570acb42ad7.jpg",
+      "images": [
+        "assets/uploads/d515c10fa872a019e76d3c9b630ceefa94bd4f878cc616f8a1b6827f6af2d90a.jpg",
+        "assets/uploads/520f9db79224b9f03f30fde711b0247c6c17a85c04e76324bd9956bf60efd7e6.jpg"
       ],
       "active": true
     }
