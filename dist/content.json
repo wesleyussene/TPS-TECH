@@ -13,12 +13,15 @@
     },
     {
       "id": "portatil",
-      "name": "Computador portátil",
+      "name": "Microsoft Surface 7TH edition Ultra 7",
       "category": "Computadores",
       "description": "Um espaço para trabalhar, estudar e dar forma às suas ideias.",
-      "price": null,
-      "image": "",
-      "images": [],
+      "price": 125000,
+      "image": "assets/uploads/dcd7b4a964936c00348160b058179e5e9e1a7120cc6398df1a1f21206e09290e.jpg",
+      "images": [
+        "assets/uploads/2229a6d4f1057c7d52625fe66f69b8734f8afef5c039b8df050f1771c2882fa7.jpg",
+        "assets/uploads/4c3d1a88d7d61cedf46a2451085de0b5ee65460a107f6b2a4153eddfb42e7516.jpg"
+      ],
       "active": true
     },
     {
@@ -37,22 +40,25 @@
     },
     {
       "id": "console",
-      "name": "Consola de jogos",
+      "name": "PlayStation 5 Slim 1Tb",
       "category": "Gaming",
       "description": "Novos mundos para explorar e momentos para partilhar.",
-      "price": null,
-      "image": "",
+      "price": 60000,
+      "image": "assets/uploads/890e0a16ec83c3f16da0dd096653f2cd098f8cce2f13505f813a882fa4d47ed0.jpg",
       "images": [],
       "active": true
     },
     {
       "id": "smartwatch",
-      "name": "Relógio inteligente",
+      "name": "Amaze Fit GTS2",
       "category": "Wearables",
       "description": "O complemento para acompanhar a sua rotina, sempre à mão.",
-      "price": null,
-      "image": "",
-      "images": [],
+      "price": 9000,
+      "image": "assets/uploads/55b9752fd5dc1f0688312353b162da42f8f5a25e97c0dec634617c091095f2c5.jpg",
+      "images": [
+        "assets/uploads/34b5ecbea3bcb862515fa19da54767bf746a7fefee23741ee2e09d0910c52bab.jpg",
+        "assets/uploads/f2a87b09329b2fd377a2f2dd56a3b1f3666c5db9eb7b21e6b11de7f2b8a1d227.jpg"
+      ],
       "active": true
     },
     {
@@ -70,22 +76,29 @@
     },
     {
       "id": "speaker",
-      "name": "Coluna Bluetooth",
+      "name": "JBL Boombox 4",
       "category": "Áudio",
       "description": "Leve a sua banda sonora para os momentos que mais importam.",
-      "price": null,
-      "image": "",
-      "images": [],
+      "price": 42000,
+      "image": "assets/uploads/6c4fa5fc7985afefa6c44ce02935f915db2d5377516aea766e462ca2240e3e03.jpg",
+      "images": [
+        "assets/uploads/e8f3fca7dada7f98d1ad484b9be21d213c854023c31da48d852bac1c629ba48e.jpg"
+      ],
       "active": true
     },
     {
       "id": "keyboard",
-      "name": "Teclado sem fios",
+      "name": "Logitech MK220 wireless",
       "category": "Computadores",
       "description": "Complete o seu espaço de trabalho com uma solução prática.",
-      "price": null,
-      "image": "",
-      "images": [],
+      "price": 2650,
+      "image": "assets/uploads/a4694398ffe2f50d993e466734c52685b1eaa8a3569bf49af8f370f2f71a8698.jpg",
+      "images": [
+        "assets/uploads/a855b046833a198dd0939c5da04e883b45f84e2c42bf38c2fd45b6e76718b116.jpg",
+        "assets/uploads/ad1eeb740bb70f573b454eafc6fb74ddd3dfe239f6b5dc2cb12460a3ea4b1be9.jpg",
+        "assets/uploads/2955292bd3179a91c25d3ee1a0aa2738372ca1d30e9510c29f4ced220d0a182b.jpg",
+        "assets/uploads/55228355198dd677fbed2f9cb476cdde24c16623318fa67b06d6b5e23aafeacc.jpg"
+      ],
       "active": true
     },
     {
