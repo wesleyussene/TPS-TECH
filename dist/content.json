@@ -151,7 +151,7 @@
     }
   ],
   "banners": [],
-  "sampleCatalogue": true,
+  "sampleCatalogue": false,
   "announcement": "Tecnologia para o seu dia a dia.",
   "hero": {
     "eyebrow": "O SEU PRÓXIMO UPGRADE",
