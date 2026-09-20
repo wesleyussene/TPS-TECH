@@ -148,6 +148,18 @@
         "assets/uploads/520f9db79224b9f03f30fde711b0247c6c17a85c04e76324bd9956bf60efd7e6.jpg"
       ],
       "active": true
+    },
+    {
+      "id": "produto-140b4410",
+      "name": "Connex Horizon X Celeron Dual Core 4GB 256GB 14” Win11",
+      "category": "Computadores",
+      "description": "",
+      "price": 21000,
+      "image": "assets/uploads/6ba13f0d38e95196b0fe917b251c1702f9d115b4350e4ad0586942ebd116cb9e.jpg",
+      "images": [
+        "assets/uploads/c7d38aff54acc8ddeb6aa0028254d8b9b1a84dcdba0c745d62931e152d572bdd.jpg"
+      ],
+      "active": true
     }
   ],
   "banners": [],
