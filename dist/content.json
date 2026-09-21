@@ -300,6 +300,26 @@
       "image": "assets/uploads/46416073176a3b8807bb4a15d04034c8d7c7f34ae9491784413fc2e1914046b1.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-7fe71ab8",
+      "name": "HP Probook 4 G1iR 16 Core7 150U 16GB 512GB SSD 16” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 90000,
+      "image": "assets/uploads/6bf8d1ae3e821f3e8f94f16e1110d606f102bd51d9d9dd7898831dc572a2f704.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-2a46f381",
+      "name": "HP Omnibook X Flip 16-as0043dx Ultra9 288V 32GB 2TB 16” Oled Touch 2in1 Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 145000,
+      "image": "assets/uploads/f3c6e5ebb12a45d16ac3369f56a5f09b49ad7f5a0406e076421cb674ce9cdd90.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
