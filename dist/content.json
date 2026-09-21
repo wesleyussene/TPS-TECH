@@ -280,6 +280,26 @@
       "image": "assets/uploads/f2bae49cc49c48e0353afcc62ccf569b6b830ee1ab3238aa5e6f915b642423e7.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-1170722d",
+      "name": "HP Probook 4 G1i Ultra7 255H 16GB 1TB SSD 16” 2K Nvidia RTX 3050 4GB Win11 Pro (teclado PT)",
+      "category": "Computadores",
+      "description": "",
+      "price": 100000,
+      "image": "assets/uploads/2ab42914581c7d483784ba38fcd4023c827cece6bc4c3280a00c53dfc72b421f.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-3ae29564",
+      "name": "HP Probook 4 G2i AI 16 Core7 350u 16GB 512GB SSD 16” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 92000,
+      "image": "assets/uploads/46416073176a3b8807bb4a15d04034c8d7c7f34ae9491784413fc2e1914046b1.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
