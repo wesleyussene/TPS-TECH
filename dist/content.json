@@ -480,6 +480,26 @@
       "image": "assets/uploads/abb79984af402c52c406a6aee6d5ecb2f6b2657542f83ec3082e82639c5a2a8e.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-cb09e15d",
+      "name": "Dell Vostro 5640 Core5 120u 16GB 512GB SSD 16” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 65000,
+      "image": "assets/uploads/139896300cbb4ec36917ddd9c4564be8fc75d3cece2f1af459ea5defcfaa68d4.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-d52613eb",
+      "name": "Lenovo Thinkpad X1 Carbon Gen 13 Ultra7 255H 32GB 1TB SSD 14” 2K Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 160000,
+      "image": "assets/uploads/33f1643ebd0f43bb6047f642eba601c86cfaf12ff38369619d0c4b9aee3340ea.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
