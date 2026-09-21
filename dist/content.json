@@ -350,6 +350,16 @@
       "image": "assets/uploads/5f2addd25f305b2660b32f42bb854c21d13c6c52d58574d2e012dbd51f2119a3.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-3af0e056",
+      "name": "HP Omnibook X flip 14-fp0023dx Ultra5 16G 512GB 14” 2K Touch X360 2in1 Win11",
+      "category": "Computadores",
+      "description": "",
+      "price": 90000,
+      "image": "assets/uploads/48607be7c1e71fa0101fc5d25a9a5a0a982774034589ce5225e3389706c0f89a.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
