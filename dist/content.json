@@ -530,6 +530,16 @@
       "image": "assets/uploads/affbb3dd183e4b2bd1e5b87a8f77ec580eb1555de8a3a1630a964229aa1f9f77.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-6428c9f9",
+      "name": "Lenovo Thinkpad L16 Gen 2 Ultra5 225u 16GB 1TB SSD 16” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 83000,
+      "image": "assets/uploads/fb15523c46c680fccf82c8b2d51825e189ef6e4201e22d593e8ddef15a843520.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
