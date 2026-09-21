@@ -540,6 +540,70 @@
       "image": "assets/uploads/fb15523c46c680fccf82c8b2d51825e189ef6e4201e22d593e8ddef15a843520.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-7fb94ef0",
+      "name": "Lenovo Yoga Pro 7 14ASP10 Ryzen AI 9 365 32GB 1TB SSD 14.5” 2.9K Oled Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 145000,
+      "image": "assets/uploads/15364332920a1d82e7b51d4df161fb4a3b4343d39a0ba54898b1f49cc157c051.webp",
+      "images": [
+        "assets/uploads/9645c9358c4838113e46224982b498f2168ec167cafe84ece4657eef57d07d67.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "produto-aedaf416",
+      "name": "Lenovo ThinkBook 14 Ultra7 125u 16GB 512GB SSD 14” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 95000,
+      "image": "assets/uploads/571c50deef3255e3af3fceaecbf217e2a2ddc06656e79f07c615b00ffb67e6f0.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-fc5afcd9",
+      "name": "Lenovo Idepad Slim3 15IRH10 i7-13620H 16GB 512GB SSD 15.3” WUXGA Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 65000,
+      "image": "assets/uploads/30d578fef580fe030f95bb43b82b4c4c488fa1818a90048b82ea52680ec3e111.webp",
+      "images": [
+        "assets/uploads/3e50443032b39c284519397af053e46d9ef75ae67ef3d2d49b9edcbc43ed466e.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "produto-31a2f607",
+      "name": "Lenovo Idepad Slim3 15ARP10 Ryzen7 170 16GB 512GB SSD 15.3” WUXGA Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 65000,
+      "image": "assets/uploads/8d3d01c406954ae7d9b568a57d5b212ebd793b7c22abd06a68e1eaa6ec429a5c.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-aa9d6b73",
+      "name": "Lenovo IdeaPad Slim 3 15AMN7 Ryzen5 40 8GB 256GB SSD 15.6” Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 51000,
+      "image": "assets/uploads/04154784afa29efc15a99c805daaa99402ae2d3880325503427e261af839edec.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-55a585eb",
+      "name": "Lenovo IdeaPad1 15AMN7 Ryzen5 8GB 256GB SSD 15.6” Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 49000,
+      "image": "assets/uploads/996afd9d2471948e21998c4269925c651ccb0f6f367a5601296df58dfa7f3d35.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
