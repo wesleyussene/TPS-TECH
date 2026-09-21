@@ -500,6 +500,26 @@
       "image": "assets/uploads/33f1643ebd0f43bb6047f642eba601c86cfaf12ff38369619d0c4b9aee3340ea.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-5d8c6b7c",
+      "name": "Lenovo ThinkPad P14s Ultra7 32GB 1TB SSD Nvidia RTX 3050 14” Touch Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 145000,
+      "image": "assets/uploads/74980ef0a368c5c86b5bde58f9b5264ab6aa39019d2bfbd09bf852323bec88a0.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-d74b031a",
+      "name": "Lenovo ThinkPad L16 Gen3 Ultra5 325u 16GB 1TB SSD LTE 16” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 85000,
+      "image": "assets/uploads/7d8cdff2f154ddcd1a89e99dade419accdb8528cb5c9fe544f1d773a587784df.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
