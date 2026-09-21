@@ -438,6 +438,18 @@
       "image": "assets/uploads/8e403dcf2d34d3666e8a53328becd0dff341f192b28d9345fb7c03550348bdb3.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-6ea3f591",
+      "name": "Dell Inspiron Gamer G16 7630 i9-13900HX 32GB 1TB SSD Nvidia RTX 4070 8GB 16” QHD+ 240Hz Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 165000,
+      "image": "assets/uploads/4cfda992d331ac7e8d7e6cb0c3857d0693961d47d70dc08d4aeb8cdba98f6b8b.webp",
+      "images": [
+        "assets/uploads/edc4cf3d399c8722593ba03bc9dc7ec0bfc3bf8f395a7f2b6436a5c721d66c24.webp"
+      ],
+      "active": true
     }
   ],
   "banners": [],
