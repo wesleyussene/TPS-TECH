@@ -250,6 +250,26 @@
       "image": "assets/uploads/841cb8c290ba7d2d864723185791d540451968e8f8201d3a83f5b0f29d9d8f26.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-cd7658db",
+      "name": "HP Elitebook 860 G11 Ultra7 155U 16GB 512GB SSD 4G LTE 16” Free Dos",
+      "category": "Computadores",
+      "description": "",
+      "price": 110000,
+      "image": "assets/uploads/90695b17ea4412722bf7c474e98663f871f8bfd38a652e9eb44ddec5d8a7cdf0.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-bc56a4e4",
+      "name": "HP Elitebook 660 G11 Ultra5 135U 16GB 512GB SSD 16” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 85000,
+      "image": "assets/uploads/b223142253ac41eed9e0c219ac6be8af65309656eab2a735b1d74bce85f658b3.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
