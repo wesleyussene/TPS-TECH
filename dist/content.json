@@ -450,6 +450,26 @@
         "assets/uploads/edc4cf3d399c8722593ba03bc9dc7ec0bfc3bf8f395a7f2b6436a5c721d66c24.webp"
       ],
       "active": true
+    },
+    {
+      "id": "produto-82a4982a",
+      "name": "Dell Inspiron 14 Plus 7440 Ultra9 185H 32GB 1TB SSD 14” 2.8K Win11 Pro (ice blue)",
+      "category": "Computadores",
+      "description": "",
+      "price": 135000,
+      "image": "assets/uploads/9efaefa9e37eea99e1697832fc58e13f9f6921b315e51c1b98b6c04f15cf421b.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-d52dd518",
+      "name": "Dell Inspiron 7440 Snapdragon X Plus 16GB 1TB SSD 14” 2.8K Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 105000,
+      "image": "assets/uploads/8d01cd8422589e0b1077f59bcef3589d766ee887d870829cd279ecafb1d88bdb.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
