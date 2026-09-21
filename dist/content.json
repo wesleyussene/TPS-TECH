@@ -160,6 +160,16 @@
         "assets/uploads/c7d38aff54acc8ddeb6aa0028254d8b9b1a84dcdba0c745d62931e152d572bdd.jpg"
       ],
       "active": true
+    },
+    {
+      "id": "produto-982dc2d2",
+      "name": "HP Zbook Studio 16 G11 Ultra7 165H 32GB 1TB Nvidia RTX 2000 8GB 16” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 165000,
+      "image": "assets/uploads/fa4717623442bcfc583b90e5734a262af7d237be6d2be8daa5db7b5464d06c5f.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
