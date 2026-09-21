@@ -382,6 +382,18 @@
         "assets/uploads/047b82112c7a9f020bf2778533dae4c355bcaac1e5bd1add8c1d226f8fbe249e.webp"
       ],
       "active": true
+    },
+    {
+      "id": "produto-30f07b21",
+      "name": "Dell XPS 13 9345 Snapdragon X Elite12 32GB 1TB SSD 13.4” Oled Touch Win11",
+      "category": "Computadores",
+      "description": "",
+      "price": 160000,
+      "image": "assets/uploads/5d40da9ad06880d38526439e0e88bfda6a499c55ec0514f55d7ca1b6ac809586.webp",
+      "images": [
+        "assets/uploads/9bf20b5581723fc8bf24ef274ecc33a707c041612686700bbbd184494ff818e7.webp"
+      ],
+      "active": true
     }
   ],
   "banners": [],
