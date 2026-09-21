@@ -406,6 +406,38 @@
         "assets/uploads/1ecdf17eca0826e964360b471cf0a106d1647ab087f03d8350710a54d99d21fc.webp"
       ],
       "active": true
+    },
+    {
+      "id": "produto-e8aab115",
+      "name": "Dell Latitude 14 Pro Plus Ultra5 265v 16GB 512GB SSD 14” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 85000,
+      "image": "assets/uploads/dd1fdc66723dd720ae814e28e1db2ec3bca006eecfcb46f6aa594e6323ad0678.webp",
+      "images": [
+        "assets/uploads/4f6944916c09b0efd0c3a5fc4e93ca933d2442cc4b9bd777841aad428a95d51a.webp"
+      ],
+      "active": true
+    },
+    {
+      "id": "produto-84287a00",
+      "name": "Dell Latitude 14 Pro Plus Ultra5 265v 16GB 256GB SSD 14” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 80000,
+      "image": "assets/uploads/00adaadb81ad11adb8f8e2fe0f65fc4975cde4efba9a03f541d14924a74e98a5.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-d9f38f75",
+      "name": "Dell Latitude 5550 Ultra5 i5-1335u 16GB 512GB SSD 15.6” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 82000,
+      "image": "assets/uploads/8e403dcf2d34d3666e8a53328becd0dff341f192b28d9345fb7c03550348bdb3.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
