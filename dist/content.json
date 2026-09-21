@@ -190,6 +190,16 @@
       "image": "assets/uploads/bec184f66856373d68adc9249a3323825992d14ae5ca4208168263592874ff22.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-0855ad0f",
+      "name": "HP Zbook Firefly 14 G11 Ultra7 32GB 1TB 14” 5G Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 135000,
+      "image": "assets/uploads/e995d7b28dcee605eeb85753c4f0fc4d2fc46dd0fd18891220c50b9810a20dd6.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
