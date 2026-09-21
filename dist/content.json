@@ -360,6 +360,28 @@
       "image": "assets/uploads/48607be7c1e71fa0101fc5d25a9a5a0a982774034589ce5225e3389706c0f89a.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-ef79bdc7",
+      "name": "HP Omnibook 3 16-bv0005ni Ryzen5 40 8GB 512GB SSD Radeon 610M 16” Touch WUXGA Win11",
+      "category": "Computadores",
+      "description": "",
+      "price": 65000,
+      "image": "assets/uploads/fb6505868efda76538c8c341088e903c5cc09690723282dd9d1a0b6669b4f85e.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-36cb59c9",
+      "name": "Dell Precision 5690 Ultra7 16GB 1TB SSD Nvidia RTX 1000 8GB 16” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 145000,
+      "image": "assets/uploads/35c2040635cf0b8d5e5ce2cccd9f2869812b7e9c2c95c6f4f640deff4df75e2a.webp",
+      "images": [
+        "assets/uploads/047b82112c7a9f020bf2778533dae4c355bcaac1e5bd1add8c1d226f8fbe249e.webp"
+      ],
+      "active": true
     }
   ],
   "banners": [],
