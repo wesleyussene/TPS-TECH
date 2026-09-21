@@ -230,6 +230,16 @@
       "image": "assets/uploads/eabd3f55426793344a5e500347ea602048f0d653d40d4aaddc67255bb4b3018b.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-affdbac0",
+      "name": "HP Elitebook 830 G11 Ultra7 155U 16GB 512GB SSD 13.3” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 130000,
+      "image": "assets/uploads/82c8afcb86b3c2224d1868c351e9d22abdb6f4ece669f1b5071e15916a13e170.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
