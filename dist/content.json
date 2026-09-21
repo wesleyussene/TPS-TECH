@@ -170,6 +170,16 @@
       "image": "assets/uploads/fa4717623442bcfc583b90e5734a262af7d237be6d2be8daa5db7b5464d06c5f.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-8b52345e",
+      "name": "HP Zbook Firefly 16 G11 Ultra7 64GB 2TB Nvidia RTX A500 4GB Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 160000,
+      "image": "assets/uploads/fcfcba74a2cd2ca3738620f96b6a0b4de1cdc185c9da8b11d67f04942c367b6f.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
