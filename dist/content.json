@@ -270,6 +270,16 @@
       "image": "assets/uploads/b223142253ac41eed9e0c219ac6be8af65309656eab2a735b1d74bce85f658b3.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-86b2f20b",
+      "name": "HP Elitebook 640 G11 Ultra5 135U 16GB 512GB SSD 14” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 85000,
+      "image": "assets/uploads/f2bae49cc49c48e0353afcc62ccf569b6b830ee1ab3238aa5e6f915b642423e7.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
