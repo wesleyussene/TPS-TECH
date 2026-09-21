@@ -320,6 +320,16 @@
       "image": "assets/uploads/f3c6e5ebb12a45d16ac3369f56a5f09b49ad7f5a0406e076421cb674ce9cdd90.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-8f805c17",
+      "name": "HP Omnibook X flip 14-14kb0023dx Ultra7 355u 16G 1TB 14” 2K Oled Touch X360 2in1 Win11",
+      "category": "Computadores",
+      "description": "",
+      "price": 120000,
+      "image": "assets/uploads/0f9be625f93b2bb57ad03eedcc98a7c8074b296114134eba8c2ccb1f1b59e2d8.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
