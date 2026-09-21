@@ -200,6 +200,16 @@
       "image": "assets/uploads/e995d7b28dcee605eeb85753c4f0fc4d2fc46dd0fd18891220c50b9810a20dd6.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-c2dd5eec",
+      "name": "Hp Elitebook 865 G11 Ryzen7 PRO 8840HS 64GB 2TB SSD Radeon 780M 16” Oled 2.8K Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 150000,
+      "image": "assets/uploads/eabd3f55426793344a5e500347ea602048f0d653d40d4aaddc67255bb4b3018b.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
