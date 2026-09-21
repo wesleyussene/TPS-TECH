@@ -520,6 +520,16 @@
       "image": "assets/uploads/7d8cdff2f154ddcd1a89e99dade419accdb8528cb5c9fe544f1d773a587784df.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-4099aade",
+      "name": "Lenovo ThinkPad L14 Gen7 Ultra5 325u 16GB 1TB SSD LTE 14” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 85000,
+      "image": "assets/uploads/affbb3dd183e4b2bd1e5b87a8f77ec580eb1555de8a3a1630a964229aa1f9f77.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
