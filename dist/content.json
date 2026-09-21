@@ -340,6 +340,16 @@
       "image": "assets/uploads/e55a124c512ebd4beb1ddd9f9a7883310e1efe6ac18607b8026c8840d1b82719.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-8a3d869f",
+      "name": "HP Omnibook 3 16-bv0005ni Ryzen AI 7 445 16GB 512GB SSD Radeon 840M 16” WUXGA Win11 + Mouse HP 400",
+      "category": "Computadores",
+      "description": "",
+      "price": 75000,
+      "image": "assets/uploads/5f2addd25f305b2660b32f42bb854c21d13c6c52d58574d2e012dbd51f2119a3.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
