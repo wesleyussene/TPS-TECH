@@ -394,6 +394,18 @@
         "assets/uploads/9bf20b5581723fc8bf24ef274ecc33a707c041612686700bbbd184494ff818e7.webp"
       ],
       "active": true
+    },
+    {
+      "id": "produto-1fd177a2",
+      "name": "Dell Latitude 13 Pro Plus Ultra5 265v 32GB 512GB SSD 14” Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 93000,
+      "image": "assets/uploads/bfa83706ab3687f73e6a8a53b52850bb600e2607fde13cdd58a8a355b589a532.webp",
+      "images": [
+        "assets/uploads/1ecdf17eca0826e964360b471cf0a106d1647ab087f03d8350710a54d99d21fc.webp"
+      ],
+      "active": true
     }
   ],
   "banners": [],
