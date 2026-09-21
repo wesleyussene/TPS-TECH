@@ -330,6 +330,16 @@
       "image": "assets/uploads/0f9be625f93b2bb57ad03eedcc98a7c8074b296114134eba8c2ccb1f1b59e2d8.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-26a5aa99",
+      "name": "HP Omnibook 5 Flip 14-fp0023dx Core7 150u 16GB 512GB 14” 2K Touch X360 2in1 Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 105000,
+      "image": "assets/uploads/e55a124c512ebd4beb1ddd9f9a7883310e1efe6ac18607b8026c8840d1b82719.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
