@@ -470,6 +470,16 @@
       "image": "assets/uploads/8d01cd8422589e0b1077f59bcef3589d766ee887d870829cd279ecafb1d88bdb.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-fa1927bf",
+      "name": "Dell Inspiron 3530 i7-1355u 16GB 512GB SSD 15.6” Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 70000,
+      "image": "assets/uploads/abb79984af402c52c406a6aee6d5ecb2f6b2657542f83ec3082e82639c5a2a8e.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
