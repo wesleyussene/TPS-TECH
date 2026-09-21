@@ -604,6 +604,56 @@
       "image": "assets/uploads/996afd9d2471948e21998c4269925c651ccb0f6f367a5601296df58dfa7f3d35.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-a2362654",
+      "name": "Zenbook Duo UX8406C Ultra9 285H 32GB 1TB SSD Dual 14” 3K Oled Touch c/ Kickstand e teclado desmontável Win11",
+      "category": "Computadores",
+      "description": "",
+      "price": 175000,
+      "image": "assets/uploads/c1a165e75cca9f91af4fa41de55a607caa90b6a8f9e4f3280b4970b09118df33.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-11f925ac",
+      "name": "Vivobook 14 Flip TP3407S Ultra7 256V 16GB 512GB SSD 14” 2in1 Oled WUXGA Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 95000,
+      "image": "assets/uploads/7239e2f0bf27fcb093274b9d6ef3d190ff43630576fdd0b826d8a9090c150e0e.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-266ac5cf",
+      "name": "Asus Tuf Gaming FX608J i7-14650HX 16GB 1TB SSD Nvidia RTX 5060 8GB 16” WUXGA Win11H",
+      "category": "Smartphones",
+      "description": "",
+      "price": 140000,
+      "image": "assets/uploads/91df379d386ee1b9b49215fa5cb460c303305ced2840b6a40ec1e76b4212dcdd.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-acdaa9fc",
+      "name": "Asus Vivobook M1407K Ryzen AI 5 330 16GB 512GB SSD 14” WUXGA",
+      "category": "Smartphones",
+      "description": "",
+      "price": 55000,
+      "image": "assets/uploads/4ea4aa643f893fe4146d167d0b8da83342fca3f74432743408696bc6bec01aff.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-03a4cc27",
+      "name": "Asus Vivobook 15 E1504F Ryzen5 40 8GB 512GB SSD 15.6” Win11H",
+      "category": "Computadores",
+      "description": "",
+      "price": 55000,
+      "image": "assets/uploads/11e49a8693c2105f5c328f8bcf568eaa7b0043ee4c1b799ce7e4a55fc8289b1f.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
