@@ -654,6 +654,26 @@
       "image": "assets/uploads/11e49a8693c2105f5c328f8bcf568eaa7b0043ee4c1b799ce7e4a55fc8289b1f.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-5dc02afc",
+      "name": "Microsoft Surface for Business 7th ed. Ultra7 268V 32GB 1TB SSD 15” Touchscreen Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 150000,
+      "image": "assets/uploads/b82b0f9f7d2d6380584e7e85d337e4ab3f52a45269d97e03e286c3e948da3275.webp",
+      "images": [],
+      "active": true
+    },
+    {
+      "id": "produto-c5d9b606",
+      "name": "Microsoft Surface for Business 7th ed. Ultra7 268V 16GB 512GB SSD 15” Touchscreen Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 125000,
+      "image": "assets/uploads/edc4b46e1e09e7b3cd6dd43a9383520710ead20556860b3494e46fb546d2cdab.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
