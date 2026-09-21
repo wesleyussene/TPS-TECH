@@ -240,6 +240,16 @@
       "image": "assets/uploads/82c8afcb86b3c2224d1868c351e9d22abdb6f4ece669f1b5071e15916a13e170.webp",
       "images": [],
       "active": true
+    },
+    {
+      "id": "produto-c901d31f",
+      "name": "HP Elitebook 865 G11 Ryzen7 PRO 8840HS 32GB 1TB SSD Radeon 780M 16” Oled 2.8K Win11 Pro",
+      "category": "Computadores",
+      "description": "",
+      "price": 115000,
+      "image": "assets/uploads/841cb8c290ba7d2d864723185791d540451968e8f8201d3a83f5b0f29d9d8f26.webp",
+      "images": [],
+      "active": true
     }
   ],
   "banners": [],
