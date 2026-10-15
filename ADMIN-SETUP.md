@@ -16,7 +16,7 @@ Keep Vercel's root directory set to `dist`, framework preset `Other`, and deploy
 ## Editing workflow
 
 1. Sign in at `/admin.html`.
-2. Add or edit products, prices, descriptions and photos. Hide products using “Visível na loja”.
+2. Add or edit products, prices, descriptions and photos. Select a category, then an optional subcategory from that category. Changing the category clears the subcategory selection. Hide products using “Visível na loja”.
 3. Edit the main banner, optional extra banners, announcement and About Us copy.
 4. Apply changes to the draft. “Guardar rascunho” stores content and pending images in **this browser only**, not across devices. A restored draft keeps its original revision so it cannot silently overwrite someone else's changes.
 5. Click “Publicar alterações”, review the confirmation, and publish. The server commits `content.json`, generated `products.js`, and uploaded image files together. Vercel's GitHub integration then deploys the new revision. The panel polls the public content and distinguishes a saved commit from a confirmed live publication.
@@ -31,4 +31,4 @@ If the repository credential expires or Vercel deployment fails, the panel repor
 
 ## Validation
 
-Run `node --test tests/admin.test.cjs`. Browser checks cover editing prices/descriptions, image optimization, draft persistence, separate publishing, and mobile/desktop layout. Test fixtures and credentials are not in `dist`.
+Run `node --test tests/*.test.cjs`. Category tests cover all 17 categories, 86 subcategories, legacy aliases, invalid parent/subcategory pairs and agreement between generated product data and the source catalogue. Browser checks cover editing prices/descriptions, image optimization, draft persistence, separate publishing, and mobile/desktop layout. Test fixtures and credentials are not in `dist`.

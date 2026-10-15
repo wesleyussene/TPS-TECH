@@ -20,7 +20,9 @@ Empty image values display the intentional image placeholder. Use the exact file
 
 ## Change products and prices
 
-Edit `dist/products.js`. Each entry contains `id`, `name`, `category`, `description`, `image`, and `price`. IDs must be unique. Use these existing categories: Smartphones, Computadores, Áudio, Gaming, Wearables, Acessórios. Add category definitions in `dist/app.js` if needed.
+Use `/admin.html` to edit products, prices, photos, categories and subcategories; see `ADMIN-SETUP.md`. The panel saves `dist/content.json` and generates `dist/products.js` together. Product IDs must remain unique.
+
+`dist/categories.js` defines the 17 categories and 86 subcategories shared by the website, admin editor and server validator. Each subcategory belongs to its parent category. Legacy category names are mapped to their current equivalents without adding duplicate options. Products may remain without a subcategory until a suitable one is selected. The homepage mixes categories and displays 10 products per page.
 
 Set `price` to a number in MZN to show a formatted price, or leave it `null` for “Preço sob consulta”. All supplied items are illustrative, not verified store inventory.
 

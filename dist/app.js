@@ -1,11 +1,4 @@
-const categories = [
-  {name:'Smartphones',icon:'phone',caption:'Sempre ligado'},
-  {name:'Computadores',icon:'laptop',caption:'Crie sem limites'},
-  {name:'Áudio',icon:'headphones',caption:'Sinta cada detalhe'},
-  {name:'Gaming',icon:'game',caption:'Entre no jogo'},
-  {name:'Wearables',icon:'watch',caption:'Ao seu ritmo'},
-  {name:'Acessórios',icon:'plug',caption:'Complete o seu mundo'}
-];
+const {categories,canonicalName,subcategoriesFor}=window.TOP_TAXONOMY;
 const products = window.TOP_PRODUCTS;
 const pageSize = 10;
 function shuffled(items){
@@ -27,16 +20,26 @@ const mixedProducts=[];
 for(let row=0;mixedProducts.length<products.length;row++){
   for(const group of categoryGroups)if(group[row])mixedProducts.push(group[row]);
 }
-const state = {category:'Todos',query:'',page:1};
+const params=new URLSearchParams(location.search);
+const requestedCategory=canonicalName(params.get('category'));
+const initialCategory=categories.some(c=>c.name===requestedCategory)?requestedCategory:'Todos';
+const state = {category:initialCategory,subcategory:subcategoriesFor(initialCategory).includes(params.get('subcategory'))?params.get('subcategory'):'',query:'',page:1};
 const esc = (s) => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const icon = (name) => `<svg class="icon" aria-hidden="true"><use href="#i-${name}"/></svg>`;
 const normalize = s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 const price = p => typeof p.price==='number' ? new Intl.NumberFormat('pt-MZ',{style:'currency',currency:'MZN'}).format(p.price) : 'Preço sob consulta';
 function imageMarkup(p){return p.image ? `<img class="product-image" src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy">` : `<div class="image-placeholder">${icon('image')}<span>Imagem em breve</span></div>`;}
-document.querySelector('#category-grid').innerHTML=categories.map(c=>`<a class="category-card" href="#produtos" data-category="${esc(c.name)}"><span class="category-icon">${icon(c.icon)}</span><strong>${esc(c.name)}</strong><span>${c.caption}</span>${icon('arrow')}</a>`).join('');
-document.querySelector('#filters').innerHTML=['Todos',...categories.map(c=>c.name)].map(c=>`<button type="button" data-filter="${esc(c)}" aria-pressed="${c==='Todos'}">${esc(c)}</button>`).join('');
+document.querySelector('#category-grid').innerHTML=categories.map(c=>`<article class="category-group"><a class="category-card" href="#produtos" data-category="${esc(c.name)}"><span class="category-icon">${icon(c.icon)}</span><strong>${esc(c.name)}</strong><span>${esc(c.caption)}</span>${icon('arrow')}</a><details class="category-subcategories"><summary>Explorar subcategorias <span>(${c.subcategories.length})</span></summary><ul>${c.subcategories.map(sub=>`<li><a href="#produtos" data-category="${esc(c.name)}" data-subcategory="${esc(sub)}">${esc(sub)}</a></li>`).join('')}</ul></details></article>`).join('');
+document.querySelector('#category-filter').innerHTML='<option value="Todos">Todas as categorias</option>'+categories.map(c=>`<option value="${esc(c.name)}">${esc(c.name)}</option>`).join('');
+function updateSubcategories(){
+  const select=document.querySelector('#subcategory-filter');
+  select.innerHTML='<option value="">Todas as subcategorias</option>'+subcategoriesFor(state.category).map(sub=>`<option value="${esc(sub)}">${esc(sub)}</option>`).join('');
+  select.value=state.subcategory;
+  document.querySelector('#subcategory-field').hidden=state.category==='Todos';
+}
+updateSubcategories();
 function render(){
-  const matches=mixedProducts.filter(p=>(state.category==='Todos'||p.category===state.category)&&normalize(`${p.name} ${p.category} ${p.description}`).includes(normalize(state.query.trim())));
+  const matches=mixedProducts.filter(p=>(state.category==='Todos'||p.category===state.category)&&(!state.subcategory||p.subcategory===state.subcategory)&&normalize(`${p.name} ${p.category} ${p.subcategory||''} ${p.description}`).includes(normalize(state.query.trim())));
   const pageCount=Math.max(1,Math.ceil(matches.length/pageSize));
   state.page=Math.min(state.page,pageCount);
   const start=(state.page-1)*pageSize;
@@ -48,20 +51,20 @@ function render(){
   document.querySelector('#catalog-page').textContent=`Página ${state.page} de ${pageCount}`;
   document.querySelector('#catalog-previous').disabled=state.page===1;
   document.querySelector('#catalog-next').disabled=state.page===pageCount;
-  document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.filter===state.category));
-  document.querySelectorAll('[data-category]').forEach(a=>a.classList.toggle('selected',a.dataset.category===state.category));
+  document.querySelector('#category-filter').value=state.category;
+  document.querySelectorAll('[data-category]').forEach(a=>{const selected=a.dataset.category===state.category&&(!a.dataset.subcategory||a.dataset.subcategory===state.subcategory);a.classList.toggle('selected',selected);if(selected)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
 }
 document.addEventListener('click',e=>{
   const category=e.target.closest('[data-category]');
-  const filter=e.target.closest('[data-filter]');
-  if(category){state.category=category.dataset.category;state.query='';state.page=1;document.querySelector('#search').value='';render();}
-  if(filter){state.category=filter.dataset.filter;state.page=1;render();}
+  if(category){state.category=category.dataset.category;state.subcategory=category.dataset.subcategory||'';state.query='';state.page=1;document.querySelector('#search').value='';updateSubcategories();render();}
   const detail=e.target.closest('[data-product]');
   if(detail)openProduct(detail.dataset.product);
 });
-document.querySelector('#search').addEventListener('input',e=>{state.query=e.target.value;state.category='Todos';state.page=1;render();});
+document.querySelector('#category-filter').addEventListener('change',e=>{state.category=e.target.value;state.subcategory='';state.page=1;updateSubcategories();render();});
+document.querySelector('#subcategory-filter').addEventListener('change',e=>{state.subcategory=e.target.value;state.page=1;render();});
+document.querySelector('#search').addEventListener('input',e=>{state.query=e.target.value;state.category='Todos';state.subcategory='';state.page=1;updateSubcategories();render();});
 document.querySelector('#search-form').addEventListener('submit',e=>{e.preventDefault();document.querySelector('#produtos').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});});
-document.querySelector('#reset-search').addEventListener('click',()=>{state.category='Todos';state.query='';state.page=1;document.querySelector('#search').value='';render();});
+document.querySelector('#reset-search').addEventListener('click',()=>{state.category='Todos';state.subcategory='';state.query='';state.page=1;document.querySelector('#search').value='';updateSubcategories();render();});
 for(const [selector,step] of [['#catalog-previous',-1],['#catalog-next',1]]){
   document.querySelector(selector).addEventListener('click',()=>{
     state.page=Math.max(1,state.page+step);render();
